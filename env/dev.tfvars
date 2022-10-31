@@ -5,11 +5,12 @@ public1_cidr_block = "172.20.1.0/24"
 public2_cidr_block = "172.20.2.0/24"
 public3_cidr_block = "172.20.3.0/24"
 
-# Private subnets
+# Private subnets for app
 private1_cidr_block = "172.20.4.0/24"
 private2_cidr_block = "172.20.5.0/24"
 private3_cidr_block = "172.20.6.0/24"
 
+# Private subnets for db
 privatedb1_cidr_block = "172.20.7.0/24"
 privatedb2_cidr_block = "172.20.8.0/24"
 privatedb3_cidr_block = "172.20.9.0/24"
