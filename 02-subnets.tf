@@ -67,7 +67,7 @@ resource "aws_subnet" "private_db1" {
   availability_zone = var.subnet_az1
 
   tags = {
-    Name = "app-private-subnet-1"
+    Name = "db-private-subnet-1"
   }
 }
 
@@ -77,7 +77,7 @@ resource "aws_subnet" "private_db2" {
   availability_zone = var.subnet_az2
 
   tags = {
-    Name = "app-private-subnet-2"
+    Name = "db-private-subnet-2"
   }
 }
 
@@ -87,6 +87,6 @@ resource "aws_subnet" "private_db3" {
   availability_zone = var.subnet_az3
 
   tags = {
-    Name = "app-private-subnet-3"
+    Name = "db-private-subnet-3"
   }
 }
