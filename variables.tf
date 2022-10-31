@@ -1,3 +1,13 @@
-variable vpc_cidr_block {
-  default     = "172.20.0.0/16"
-}
+variable vpc_cidr_block {}
+
+variable public1_cidr_block {}
+variable public2_cidr_block {}
+variable public3_cidr_block {}
+
+variable private1_cidr_block {}
+variable private2_cidr_block {}
+variable private3_cidr_block {}
+
+variable subnet_az1{}
+variable subnet_az2{}
+variable subnet_az3{}
