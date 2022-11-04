@@ -5,13 +5,13 @@ resource "aws_route_table" "public_rt" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
   }
-
   tags = {
     Name = "3-tier-public-rt"
   }
 }
 
 resource "aws_route_table" "private_rt_app" {
+  count = length(var.availability_zones)
   vpc_id = aws_vpc.main.id
 
   route {
@@ -25,6 +25,7 @@ resource "aws_route_table" "private_rt_app" {
 }
 
 resource "aws_route_table" "private_rt_db" {
+  count = length(var.availability_zones)
   vpc_id = aws_vpc.main.id
 
   route {

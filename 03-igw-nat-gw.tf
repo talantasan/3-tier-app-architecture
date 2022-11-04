@@ -21,7 +21,7 @@ resource "aws_nat_gateway" "nat" {
   allocation_id = element(aws_eip.nat_eip.*.id, count.index)
 
   tags = {
-    "Name" = "3-tier-nat-${count.index}"
+    "Name" = "3-tier-nat-subnet-${count.index}"
   }
 }
 
